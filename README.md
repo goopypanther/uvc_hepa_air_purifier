@@ -10,7 +10,7 @@ GTL3 bulbs have an interesting self-ignition design, they initially operate as a
 
 Airflow is provided by an inexpensive computer case fan operating at 12V. Due to the simplicity of the circuit and inherent safety of a fully enclosed device another capacitive dropper is used, followed by a full bridge rectifier and zener for rough regulation.
 
-Both capacitive droppers have bleeder resistors in series with the class X capacitors to prevent shocks off the end of the cable. The 120VAC input is protected with a fuse, MOV and inrush current limiter. I chose to install an in-line switch into the power cable but this is optional.
+Both capacitive droppers have bleeder resistors in parallel with the class X capacitors to prevent shocks off the end of the cable. The 120VAC input is protected with a fuse, MOV and inrush current limiter. I chose to install an in-line switch into the power cable but this is optional.
 
 In order to maximize the exposure of the air-stream to UVC radiation the area immediately surrounding the GTL3 bulb is sheathed in aluminum foil which will reflect the radiation through the chamber multiple times as well as protect the plastic from degradation. Other surfaces of the baffle are painted with white (titanium dioxide) interior house paint for protection. According to the scientific literature TiO is an efficient absorber of UVC radiation and should reduce the amount which escapes through the baffle via reflection. It also photocatalytically destroys VOCs but I'm not clear on if a paint coating has this ability or if it requires special preparation of the TiO particles.
 
@@ -25,7 +25,6 @@ stl    -- Exported models for 3D printing
 PCB    -- Power supply PCB design files and BOM
 gerber -- Zipped gerber files for PCB fabhouse
 sim    -- ltspice simulation of power supply
-
 ```
 
 
@@ -62,6 +61,8 @@ sim    -- ltspice simulation of power supply
 
 The supplied gerber zip file is submittable to JLCPCB/OSHPARK or other PCB fabhouse. It is important that the AC series capacitors are at least class X1 to prevent blown fuses or fire. Take care when testing this circuit, the outputs float and may have a 120VAC potential to ground so don't touch it! It may also destroy non-isolated oscilloscopes or other ground-referenced test equipment. UVC light is dangerous to the eyes and causes skin cancer, damages plastic and will even kill houseplants with sufficient exposure. Don't stare at the bulb, only run open-air tests briefly and preferably view it through the screen of a digital camera or UV filtered glasses.
 
+Total 3D printing time on my ender 3 with 20% infill was about 75 hours and used approximately 500g of filament.
+
 Coat innermost surfaces of Bottom Cap with TiO paint, as well as outer surfaces of Upper and Lower Baffle and inner surfaces of Baffle Cap.
 
 For ease of construction build the Internal Baffle Assembly first and glue aluminum foil to its inner surface. Then assemble into Top Cap.
@@ -70,5 +71,5 @@ Build Bottom Cap Assembly and Fan Cover Assembly as independent units. Ensure fa
 
 When building Baffle Cap Assembly start by installing the Baffle Cap Bracket, then the E17 Socket. The E17 mounting holes were oversized and required washers. Feed E17 wires through the holes in the Baffle Cap and Bracket before installing fasteners. Use short bolts to leave room on rear face for the PCB. The two captive nut features on the top face of the Baffle Cap were tight but the nuts seated as the bolts were screwed in. Afterward the PCB can be installed with the standoffs and the E17 wires can be connected. At that point the GTL3 bulb can be screwed into the socket and the assembly can be attached to the Top Cap.
 
-For stability the Bottom Cap Assembly, Filter and Top Cap Assembly can be fitted together before wiring the Power Cable. Plug the fan into the PCB and carefully slot the power cable into the mouse-hole on the edge of the Fan Cover. With the Fan Cover seated over the Top Cap a ziptie can be applied to the cable up against the cover to prevent it from being pushed inside the unit. The Fan Cover can then be temporarily removed to install a second ziptie on the cable against the inner surface of the Fan Cover to prevent the cable from being pulled out of the PCB. The Fan Cover can then be screwed into the Top Cap taking care that the bolts do not sit excessively proud of the surface where they would interfere with the filter's foam seal.
+For stability the Bottom Cap Assembly, Filter and Top Cap Assembly can be fit together before wiring the Power Cable. Plug the fan into the PCB and carefully slot the power cable into the mouse-hole on the edge of the Fan Cover. With the Fan Cover seated over the Top Cap a ziptie can be applied to the cable up against the cover to prevent it from being pushed inside the unit. The Fan Cover can then be temporarily removed to install a second ziptie on the cable against the inner surface of the Fan Cover to prevent the cable from being pulled out of the PCB. The Fan Cover can then be screwed into the Top Cap taking care that the bolts do not sit excessively proud of the surface where they would interfere with the filter's foam seal.
 
