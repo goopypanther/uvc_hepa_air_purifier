@@ -14,6 +14,9 @@ Both capacitive droppers have bleeder resistors in parallel with the class X cap
 
 In order to maximize the exposure of the air-stream to UVC radiation the area immediately surrounding the GTL3 bulb is sheathed in aluminum foil which will reflect the radiation through the chamber multiple times as well as protect the plastic from degradation. Other surfaces of the baffle are painted with white (titanium dioxide) interior house paint for protection. According to the scientific literature TiO is an efficient absorber of UVC radiation and should reduce the amount which escapes through the baffle via reflection. It also photocatalytically destroys VOCs but I'm not clear on if a paint coating has this ability or if it requires special preparation of the TiO particles.
 
+[![Link to youtube video](https://img.youtube.com/vi/l4DuUhZftfQ/0.jpg)](https://www.youtube.com/watch?v=l4DuUhZftfQ)
+I also posted an explanitory video of the build process [on youtube.](https://www.youtube.com/watch?v=l4DuUhZftfQ)
+
 
 ## File Structure
 
